@@ -1,0 +1,582 @@
+
+SQLines Data 3.3.73 x64 - Database Migration Tool.
+Copyright (c) 2020 SQLines. All Rights Reserved.
+
+FOR EVALUATION USE ONLY, MAY SKIP 1 ROW FROM A TABLE
+
+Current timestamp: 2020-10-29 16:33:22.132
+Current directory: C:\Users\sialla\Documents\Tools\sqlinesdata-3.3.73_x64_win\sqlinesdata-3.3.73_x64_win
+Configuration file: sqldata.cfg
+
+Connecting to databases (16 ms)
+  MySQL 8.0.21 MySQL Community Server - GPL x86_64 Win64 1.2.11 (Ok, 16 ms)
+  Microsoft SQL Server 2019 (RTM) - 15.0.2000.5 (X64) Developer Edition (64-bit) on Windows 10 Enterprise 10.0 <X64> (Build 18363: ) (Ok, 0 ms)
+
+Reading the database schema (56 tables, 15 ms)
+
+Transferring database (4 concurrent sessions):
+
+  sys.sys_config - Started (1 of 56, session 1)
+  sys.sys_config - Open cursor (6 rows read, 0 ms, session 1)
+  template_prototype.master - Started (2 of 56, session 2)
+  template_prototype.master - Open cursor (0 rows read, 0 ms, session 2)
+  template_prototype.master_history - Started (3 of 56, session 3)
+  template_prototype.master_history - Open cursor (0 rows read, 0 ms, session 3)
+  template_prototype.one_to_many - Started (4 of 56, session 4)
+  template_prototype.one_to_many - Open cursor (0 rows read, 0 ms, session 4)
+  template_prototype.master_history - Drop target table (not exists, 47 ms, session 3)
+  template_prototype.one_to_many - Drop target table (not exists, 32 ms, session 4)
+  template_prototype.master_history - Create target table (Failed, 15 ms, session 3)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+
+  template_prototype.master_history columns:
+    1. history_id, data type 246, length 20, precision 19, scale 0
+    2. trans_type, data type 253, length 40, precision 0, scale 0
+    3. tstamp, data type 7, length 19, precision 0, scale 0
+    4. updated_by, data type 253, length 120, precision 0, scale 0
+    5. trace_id, data type 253, length 64, precision 0, scale 0
+    6. span_id, data type 253, length 64, precision 0, scale 0
+    7. id, data type 246, length 20, precision 19, scale 0
+    8. version, data type 246, length 11, precision 10, scale 0
+    9. name, data type 253, length 120, precision 0, scale 0
+  template_prototype.master - Drop target table (not exists, 62 ms, session 2)
+  sys.sys_config - Drop target table (not exists, 78 ms, session 1)
+  template_prototype.one_to_many - Create target table (16 ms, session 4)
+  template_prototype.master - Create target table (0 ms, session 2)
+  sys.sys_config - Create target table (Failed, 0 ms, session 1)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'set_time' must include a data type.
+
+  sys.sys_config columns:
+    1. variable, data type 253, length 512, precision 0, scale 0
+    2. value, data type 253, length 512, precision 0, scale 0
+    3. set_time, data type 7, length 19, precision 0, scale 0
+    4. set_by, data type 253, length 512, precision 0, scale 0
+  template_prototype.one_to_many - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  template_prototype.master - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 109 ms (0 ms read, 0 ms write)
+  template_prototype.one_to_many_history - Started (5 of 56, session 3)
+  template_prototype.one_to_one - Started (6 of 56, session 4)
+  template_prototype.one_to_one_history - Started (7 of 56, session 2)
+  template_prototype.many_to_many - Started (8 of 56, session 1)
+  template_prototype.one_to_many_history - Open cursor (0 rows read, 0 ms, session 3)
+  template_prototype.one_to_one - Open cursor (0 rows read, 0 ms, session 4)
+  template_prototype.one_to_one_history - Open cursor (0 rows read, 0 ms, session 2)
+  template_prototype.many_to_many - Open cursor (0 rows read, 0 ms, session 1)
+  template_prototype.one_to_many_history - Drop target table (not exists, 31 ms, session 3)
+  template_prototype.one_to_one - Drop target table (not exists, 31 ms, session 4)
+  template_prototype.one_to_many_history - Create target table (Failed, 0 ms, session 3)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+
+  template_prototype.one_to_many_history columns:
+    1. history_id, data type 246, length 20, precision 19, scale 0
+    2. trans_type, data type 253, length 40, precision 0, scale 0
+    3. tstamp, data type 7, length 19, precision 0, scale 0
+    4. updated_by, data type 253, length 120, precision 0, scale 0
+    5. trace_id, data type 253, length 64, precision 0, scale 0
+    6. span_id, data type 253, length 64, precision 0, scale 0
+    7. id, data type 246, length 20, precision 19, scale 0
+    8. version, data type 246, length 11, precision 10, scale 0
+    9. master_id, data type 246, length 20, precision 19, scale 0
+   10. name, data type 253, length 120, precision 0, scale 0
+  template_prototype.one_to_one - Create target table (0 ms, session 4)
+  template_prototype.many_to_many_history - Started (9 of 56, session 3)
+  template_prototype.one_to_one - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 62 ms (0 ms read, 0 ms write)
+  template_prototype.master_mtm_xref - Started (10 of 56, session 4)
+  template_prototype.one_to_one_history - Drop target table (not exists, 47 ms, session 2)
+  template_prototype.many_to_many - Drop target table (not exists, 47 ms, session 1)
+  template_prototype.many_to_many_history - Open cursor (0 rows read, 0 ms, session 3)
+  template_prototype.master_mtm_xref - Open cursor (0 rows read, 16 ms, session 4)
+  template_prototype.one_to_one_history - Create target table (Failed, 0 ms, session 2)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+
+  template_prototype.one_to_one_history columns:
+    1. history_id, data type 246, length 20, precision 19, scale 0
+    2. trans_type, data type 253, length 40, precision 0, scale 0
+    3. tstamp, data type 7, length 19, precision 0, scale 0
+    4. updated_by, data type 253, length 120, precision 0, scale 0
+    5. trace_id, data type 253, length 64, precision 0, scale 0
+    6. span_id, data type 253, length 64, precision 0, scale 0
+    7. id, data type 246, length 20, precision 19, scale 0
+    8. version, data type 246, length 11, precision 10, scale 0
+    9. master_id, data type 246, length 20, precision 19, scale 0
+   10. name, data type 253, length 120, precision 0, scale 0
+  template_prototype.many_to_many - Create target table (15 ms, session 1)
+  template_prototype.many_to_many_history - Drop target table (not exists, 16 ms, session 3)
+  template_prototype.master_mtm_xref_history - Started (11 of 56, session 2)
+  template_prototype.master_mtm_xref - Drop target table (not exists, 16 ms, session 4)
+  template_prototype.many_to_many - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 109 ms (0 ms read, 0 ms write)
+  template_prototype.many_to_many_history - Create target table (Failed, 0 ms, session 3)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+
+  template_prototype.many_to_many_history columns:
+    1. history_id, data type 246, length 20, precision 19, scale 0
+    2. trans_type, data type 253, length 40, precision 0, scale 0
+    3. tstamp, data type 7, length 19, precision 0, scale 0
+    4. updated_by, data type 253, length 120, precision 0, scale 0
+    5. trace_id, data type 253, length 64, precision 0, scale 0
+    6. span_id, data type 253, length 64, precision 0, scale 0
+    7. id, data type 246, length 20, precision 19, scale 0
+    8. version, data type 246, length 11, precision 10, scale 0
+    9. name, data type 253, length 120, precision 0, scale 0
+  template_prototype.master_mtm_xref - Create target table (0 ms, session 4)
+  acciones.asociado_reforma - Started (12 of 56, session 1)
+  template_prototype.master_mtm_xref_history - Open cursor (0 rows read, 0 ms, session 2)
+  template_prototype.master_mtm_xref - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 94 ms (16 ms read, 0 ms write)
+  acciones.asociado_reforma - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.asociadoasignacion - Started (13 of 56, session 3)
+  acciones.calculos - Started (14 of 56, session 4)
+  acciones.asociadoasignacion - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.calculos - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.asociadoasignacion - Drop target table (not exists, 31 ms, session 3)
+  template_prototype.master_mtm_xref_history - Drop target table (not exists, 47 ms, session 2)
+  acciones.calculos - Drop target table (not exists, 31 ms, session 4)
+  acciones.asociadoasignacion - Create target table (0 ms, session 3)
+  template_prototype.master_mtm_xref_history - Create target table (Failed, 0 ms, session 2)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+
+  template_prototype.master_mtm_xref_history columns:
+    1. history_id, data type 246, length 20, precision 19, scale 0
+    2. trans_type, data type 253, length 40, precision 0, scale 0
+    3. tstamp, data type 7, length 19, precision 0, scale 0
+    4. updated_by, data type 253, length 120, precision 0, scale 0
+    5. trace_id, data type 253, length 64, precision 0, scale 0
+    6. span_id, data type 253, length 64, precision 0, scale 0
+    7. master_id, data type 246, length 20, precision 19, scale 0
+    8. mtm_id, data type 246, length 20, precision 19, scale 0
+  acciones.calculos - Create target table (0 ms, session 4)
+  acciones.asociadoasignacion - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 46 ms (0 ms read, 0 ms write)
+  acciones.asociado_reforma - Drop target table (not exists, 31 ms, session 1)
+  acciones.contacto - Started (15 of 56, session 2)
+  acciones.carga_inicial - Started (16 of 56, session 3)
+  acciones.calculos - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 62 ms (0 ms read, 0 ms write)
+  acciones.employee - Started (17 of 56, session 4)
+  acciones.contacto - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.carga_inicial - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.asociado_reforma - Create target table (Failed, 0 ms, session 1)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'bandera' must include a data type.
+
+  acciones.asociado_reforma columns:
+    1. id, data type 3, length 11, precision 0, scale 0
+    2. id_reforma, data type 3, length 11, precision 0, scale 0
+    3. fecha_evaluacion, data type 10, length 10, precision 0, scale 0
+    4. bandera, data type 16, length 1, precision 0, scale 0
+  acciones.employee - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.estatus - Started (18 of 56, session 1)
+  acciones.estatus - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.contacto - Drop target table (not exists, 16 ms, session 2)
+  acciones.carga_inicial - Drop target table (not exists, 16 ms, session 3)
+  acciones.employee - Drop target table (not exists, 15 ms, session 4)
+  acciones.contacto - Create target table (16 ms, session 2)
+  acciones.carga_inicial - Create target table (0 ms, session 3)
+  acciones.employee - Create target table (0 ms, session 4)
+  acciones.contacto - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.inpc - Started (19 of 56, session 2)
+  acciones.carga_inicial - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 93 ms (0 ms read, 0 ms write)
+  acciones.employee - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.estatus - Drop target table (not exists, 31 ms, session 1)
+  acciones.inpc - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.nivel - Started (20 of 56, session 3)
+  acciones.pais_moneda - Started (21 of 56, session 4)
+  acciones.estatus - Create target table (0 ms, session 1)
+  acciones.nivel - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.pais_moneda - Open cursor (0 rows read, 15 ms, session 4)
+  acciones.estatus - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 93 ms (0 ms read, 0 ms write)
+  acciones.parametro - Started (22 of 56, session 1)
+  acciones.parametro - Open cursor (0 rows read, 16 ms, session 1)
+  acciones.inpc - Drop target table (not exists, 31 ms, session 2)
+  acciones.nivel - Drop target table (not exists, 32 ms, session 3)
+  acciones.pais_moneda - Drop target table (not exists, 32 ms, session 4)
+  acciones.inpc - Create target table (0 ms, session 2)
+  acciones.nivel - Create target table (0 ms, session 3)
+  acciones.parametro - Drop target table (not exists, 31 ms, session 1)
+  acciones.pais_moneda - Create target table (0 ms, session 4)
+  acciones.inpc - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.nivel - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.precio_accion - Started (23 of 56, session 3)
+  acciones.pais_moneda - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (15 ms read, 0 ms write)
+  acciones.puesto - Started (24 of 56, session 4)
+  acciones.parametro - Create target table (Failed, 0 ms, session 1)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'editable' must include a data type.
+
+  acciones.parametro columns:
+    1. id, data type 3, length 11, precision 0, scale 0
+    2. descripcion, data type 253, length 1020, precision 0, scale 0
+    3. nombre, data type 253, length 1020, precision 0, scale 0
+    4. valor, data type 253, length 1020, precision 0, scale 0
+    5. tipo_valor, data type 3, length 11, precision 0, scale 0
+    6. editable, data type 16, length 1, precision 0, scale 0
+  acciones.perfil - Started (25 of 56, session 2)
+  acciones.puesto - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.precio_accion - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.perfil - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.razon_rechazo - Started (26 of 56, session 1)
+  acciones.razon_rechazo - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.puesto - Drop target table (not exists, 31 ms, session 4)
+  acciones.precio_accion - Drop target table (not exists, 31 ms, session 3)
+  acciones.puesto - Create target table (0 ms, session 4)
+  acciones.perfil - Drop target table (not exists, 47 ms, session 2)
+  acciones.precio_accion - Create target table (0 ms, session 3)
+  acciones.puesto - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 63 ms (0 ms read, 0 ms write)
+  acciones.precio_accion - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 94 ms (0 ms read, 0 ms write)
+  acciones.tipo_autorizacion - Started (27 of 56, session 3)
+  acciones.tipo_asignacion - Started (28 of 56, session 4)
+  acciones.perfil - Create target table (15 ms, session 2)
+  acciones.razon_rechazo - Drop target table (not exists, 31 ms, session 1)
+  acciones.tipo_autorizacion - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.tipo_asignacion - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.perfil - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.razon_rechazo - Create target table (0 ms, session 1)
+  acciones.tipo_venta - Started (29 of 56, session 2)
+  acciones.razon_rechazo - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 109 ms (0 ms read, 0 ms write)
+  acciones.tipo_venta - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.usuario - Started (30 of 56, session 1)
+  acciones.tipo_autorizacion - Drop target table (not exists, 16 ms, session 3)
+  acciones.usuario - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.tipo_asignacion - Drop target table (not exists, 32 ms, session 4)
+  acciones.tipo_autorizacion - Create target table (0 ms, session 3)
+  acciones.tipo_asignacion - Create target table (0 ms, session 4)
+  acciones.tipo_autorizacion - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 63 ms (0 ms read, 0 ms write)
+  acciones.tipo_asignacion - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.asignacion - Started (31 of 56, session 4)
+  acciones.usuario - Drop target table (not exists, 31 ms, session 1)
+  acciones.acciones_reportar - Started (32 of 56, session 3)
+  acciones.tipo_venta - Drop target table (not exists, 47 ms, session 2)
+  acciones.asignacion - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.usuario - Create target table (0 ms, session 1)
+  acciones.acciones_reportar - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.tipo_venta - Create target table (Failed, 0 ms, session 2)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tiene_cuentas' must include a data type.
+
+  acciones.tipo_venta columns:
+    1. id, data type 3, length 11, precision 0, scale 0
+    2. descripcion, data type 253, length 1020, precision 0, scale 0
+    3. tiene_cuentas, data type 16, length 1, precision 0, scale 0
+  acciones.asignacion - Drop target table (not exists, 15 ms, session 4)
+  acciones.usuario - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 63 ms (0 ms read, 0 ms write)
+  acciones.acciones_reportar - Drop target table (not exists, 31 ms, session 3)
+  acciones.asignacion - Create target table (0 ms, session 4)
+  acciones.asignacion_previa - Started (33 of 56, session 1)
+  acciones.asignacion - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 62 ms (0 ms read, 0 ms write)
+  acciones.acciones_reportar - Create target table (Failed, 15 ms, session 3)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'solicitud_activa' must include a data type.
+
+  acciones.acciones_reportar columns:
+    1. id, data type 3, length 11, precision 0, scale 0
+    2. id_contrato, data type 3, length 11, precision 0, scale 0
+    3. id_asignacion, data type 3, length 11, precision 0, scale 0
+    4. numero_acciones_reportar, data type 3, length 11, precision 0, scale 0
+    5. id_estatus, data type 3, length 11, precision 0, scale 0
+    6. fecha_registro, data type 10, length 10, precision 0, scale 0
+    7. fecha_proceso, data type 10, length 10, precision 0, scale 0
+    8. tipo_proceso, data type 3, length 11, precision 0, scale 0
+    9. solicitud_activa, data type 16, length 1, precision 0, scale 0
+  acciones.asignacion_previa - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.asociado_cuenta - Started (34 of 56, session 4)
+  acciones.asociado - Started (35 of 56, session 2)
+  acciones.asociado_cuenta - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.autorizacion - Started (36 of 56, session 3)
+  acciones.asociado - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.autorizacion - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.asociado_cuenta - Drop target table (not exists, 31 ms, session 4)
+  acciones.asociado_cuenta - Create target table (0 ms, session 4)
+  acciones.autorizacion - Drop target table (not exists, 31 ms, session 3)
+  acciones.asignacion_previa - Drop target table (not exists, 31 ms, session 1)
+  acciones.asociado_cuenta - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 47 ms (0 ms read, 0 ms write)
+  acciones.asociado - Drop target table (not exists, 47 ms, session 2)
+  acciones.autorizacion - Create target table (0 ms, session 3)
+  acciones.asignacion_previa - Create target table (0 ms, session 1)
+  acciones.bitacora - Started (37 of 56, session 4)
+  acciones.asociado - Create target table (Failed, 0 ms, session 2)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'especial' must include a data type.
+
+  acciones.asociado columns:
+    1. id, data type 3, length 11, precision 0, scale 0
+    2. status, data type 253, length 1020, precision 0, scale 0
+    3. nombre, data type 253, length 1020, precision 0, scale 0
+    4. calificacion, data type 5, length 22, precision 0, scale 0
+    5. fecha_evaluacion, data type 10, length 10, precision 0, scale 0
+    6. sueldo_mensual_actual, data type 246, length 21, precision 19, scale 2
+    7. sueldo_mensual_anterior, data type 246, length 21, precision 19, scale 2
+    8. fecha_ejecutivo, data type 10, length 10, precision 0, scale 0
+    9. fecha_efectiva, data type 10, length 10, precision 0, scale 0
+   10. fecha_baja, data type 10, length 10, precision 0, scale 0
+   11. correo, data type 253, length 1020, precision 0, scale 0
+   12. fecha_actualizacion, data type 10, length 10, precision 0, scale 0
+   13. especial, data type 16, length 1, precision 0, scale 0
+   14. jubilado, data type 16, length 1, precision 0, scale 0
+   15. bandera_reforma, data type 3, length 11, precision 0, scale 0
+   16. id_pais, data type 253, length 1020, precision 0, scale 0
+   17. id_puesto_actual, data type 3, length 11, precision 0, scale 0
+  acciones.asignacion_previa - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 110 ms (0 ms read, 0 ms write)
+  acciones.calendario - Started (38 of 56, session 1)
+  acciones.autorizacion - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.bitacora - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.calendario - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.calendario_asociado - Started (39 of 56, session 3)
+  acciones.calendario_nivel - Started (40 of 56, session 2)
+  acciones.calendario_asociado - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.calendario_nivel - Open cursor (0 rows read, 15 ms, session 2)
+  acciones.bitacora - Drop target table (not exists, 31 ms, session 4)
+  acciones.bitacora - Create target table (0 ms, session 4)
+  acciones.calendario_asociado - Drop target table (not exists, 16 ms, session 3)
+  acciones.bitacora - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 94 ms (0 ms read, 0 ms write)
+  acciones.calendario - Drop target table (not exists, 47 ms, session 1)
+  acciones.calendario_asociado - Create target table (0 ms, session 3)
+  acciones.concepto_asignacion - Started (41 of 56, session 4)
+  acciones.calendario_nivel - Drop target table (not exists, 47 ms, session 2)
+  acciones.calendario - Create target table (0 ms, session 1)
+  acciones.calendario_asociado - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 62 ms (0 ms read, 0 ms write)
+  acciones.concepto_asignacion - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.calendario_nivel - Create target table (0 ms, session 2)
+  acciones.calendario - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 94 ms (0 ms read, 0 ms write)
+  acciones.contrato - Started (42 of 56, session 3)
+  acciones.calendario_nivel - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 93 ms (15 ms read, 0 ms write)
+  acciones.concepto_asignacion - Drop target table (not exists, 16 ms, session 4)
+  acciones.detalle_venta_acciones - Started (43 of 56, session 1)
+  acciones.contrato - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.elemento_asociado_cuenta - Started (44 of 56, session 2)
+  acciones.concepto_asignacion - Create target table (16 ms, session 4)
+  acciones.detalle_venta_acciones - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.elemento_asociado_cuenta - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.concepto_asignacion - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 47 ms (0 ms read, 0 ms write)
+  acciones.elemento_tipo_cuenta - Started (45 of 56, session 4)
+  acciones.elemento_tipo_cuenta - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.contrato - Drop target table (not exists, 15 ms, session 3)
+  acciones.contrato - Create target table (0 ms, session 3)
+  acciones.elemento_asociado_cuenta - Drop target table (not exists, 47 ms, session 2)
+  acciones.detalle_venta_acciones - Drop target table (not exists, 47 ms, session 1)
+  acciones.contrato - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 63 ms (0 ms read, 0 ms write)
+  acciones.elemento_asociado_cuenta - Create target table (0 ms, session 2)
+  acciones.elemento_tipo_cuenta - Drop target table (not exists, 31 ms, session 4)
+  acciones.detalle_venta_acciones - Create target table (0 ms, session 1)
+  acciones.flujo_autorizacion - Started (46 of 56, session 3)
+  acciones.elemento_asociado_cuenta - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.elemento_tipo_cuenta - Create target table (Failed, 0 ms, session 4)
+    [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'valor_nulo' must include a data type.
+
+  acciones.elemento_tipo_cuenta columns:
+    1. id, data type 3, length 11, precision 0, scale 0
+    2. descripcion, data type 253, length 1020, precision 0, scale 0
+    3. valor_nulo, data type 16, length 1, precision 0, scale 0
+    4. valor_numerico, data type 16, length 1, precision 0, scale 0
+    5. caracteres_valor, data type 3, length 11, precision 0, scale 0
+    6. id_tipo_cuenta, data type 3, length 11, precision 0, scale 0
+  acciones.flujo_autorizacion - Open cursor (0 rows read, 15 ms, session 3)
+  acciones.horario - Started (47 of 56, session 2)
+  acciones.detalle_venta_acciones - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.menu_perfil - Started (48 of 56, session 4)
+  acciones.menu - Started (49 of 56, session 1)
+  acciones.horario - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.menu_perfil - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.menu - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.flujo_autorizacion - Drop target table (not exists, 31 ms, session 3)
+  acciones.flujo_autorizacion - Create target table (0 ms, session 3)
+  acciones.menu_perfil - Drop target table (not exists, 31 ms, session 4)
+  acciones.flujo_autorizacion - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (15 ms read, 0 ms write)
+  acciones.horario - Drop target table (not exists, 31 ms, session 2)
+  acciones.menu - Drop target table (not exists, 47 ms, session 1)
+  acciones.menu_perfil - Create target table (0 ms, session 4)
+  acciones.periodo_calendario - Started (50 of 56, session 3)
+  acciones.horario - Create target table (0 ms, session 2)
+  acciones.menu - Create target table (0 ms, session 1)
+  acciones.menu_perfil - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 62 ms (0 ms read, 0 ms write)
+  acciones.periodo_calendario - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.horario - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.menu - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 78 ms (0 ms read, 0 ms write)
+  acciones.solicitud_venta_acciones - Started (51 of 56, session 4)
+  acciones.tipo_cuenta - Started (52 of 56, session 2)
+  acciones.usuario_asignacion - Started (53 of 56, session 1)
+  acciones.periodo_calendario - Drop target table (not exists, 31 ms, session 3)
+  acciones.solicitud_venta_acciones - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.tipo_cuenta - Open cursor (0 rows read, 0 ms, session 2)
+  acciones.usuario_asignacion - Open cursor (0 rows read, 0 ms, session 1)
+  acciones.periodo_calendario - Create target table (16 ms, session 3)
+  acciones.periodo_calendario - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 63 ms (0 ms read, 0 ms write)
+  acciones.usuario_asignacion_previa - Started (54 of 56, session 3)
+  acciones.usuario_asignacion_previa - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.solicitud_venta_acciones - Drop target table (not exists, 31 ms, session 4)
+  acciones.solicitud_venta_acciones - Create target table (16 ms, session 4)
+  acciones.solicitud_venta_acciones - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 63 ms (0 ms read, 0 ms write)
+  acciones.usuario_asignacion_previa - Drop target table (not exists, 32 ms, session 3)
+  acciones.tipo_cuenta - Drop target table (not exists, 62 ms, session 2)
+  acciones.usuario_asignacion - Drop target table (not exists, 62 ms, session 1)
+  acciones.usuario_perfil - Started (55 of 56, session 4)
+  acciones.usuario_asignacion_previa - Create target table (0 ms, session 3)
+  acciones.tipo_cuenta - Create target table (0 ms, session 2)
+  acciones.usuario_asignacion - Create target table (0 ms, session 1)
+  acciones.usuario_perfil - Open cursor (0 rows read, 0 ms, session 4)
+  acciones.usuario_asignacion_previa - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 94 ms (0 ms read, 0 ms write)
+  acciones.tipo_cuenta - Data transfer complete (session 2)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 125 ms (0 ms read, 0 ms write)
+  acciones.usuario_asignacion - Data transfer complete (session 1)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 125 ms (0 ms read, 0 ms write)
+  acciones.usuario_rechazado - Started (56 of 56, session 3)
+  acciones.usuario_rechazado - Open cursor (0 rows read, 0 ms, session 3)
+  acciones.usuario_perfil - Drop target table (not exists, 31 ms, session 4)
+  acciones.usuario_rechazado - Drop target table (not exists, 16 ms, session 3)
+  acciones.usuario_perfil - Create target table (0 ms, session 4)
+  acciones.usuario_rechazado - Create target table (0 ms, session 3)
+  acciones.usuario_perfil - Data transfer complete (session 4)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 94 ms (0 ms read, 0 ms write)
+  acciones.usuario_rechazado - Data transfer complete (session 3)
+     Rows read:     0 (0 rows/sec)
+     Rows written:  0 (0 rows/sec, 0 bytes, 0 bytes/sec)
+     Transfer time: 62 ms (0 ms read, 0 ms write)
+
+Failed tables (12 tables):
+
+    1. template_prototype.master_history - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+    2. sys.sys_config - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'set_time' must include a data type.
+    3. template_prototype.one_to_many_history - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+    4. template_prototype.one_to_one_history - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+    5. template_prototype.many_to_many_history - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+    6. template_prototype.master_mtm_xref_history - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tstamp' must include a data type.
+    7. acciones.asociado_reforma - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'bandera' must include a data type.
+    8. acciones.parametro - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'editable' must include a data type.
+    9. acciones.tipo_venta - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'tiene_cuentas' must include a data type.
+   10. acciones.acciones_reportar - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'solicitud_activa' must include a data type.
+   11. acciones.asociado - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'especial' must include a data type.
+   12. acciones.elemento_tipo_cuenta - [Microsoft][SQL Server Native Client 11.0][SQL Server]The definition for column 'valor_nulo' must include a data type.
+
+Please contact us at support@sqlines.com for any assistance.
+
+Summary:
+
+  Tables:        56 (44 Ok, 12 failed)
+  Target DDL:    112 (100 Ok, 12 failed)
+  Rows read:     0
+  Rows written:  0
+  Transfer time: 1.6 sec (0 rows/sec, 0 bytes, 0 bytes/sec)
+
+Logs:
+
+  Execution log:             sqldata.log
+  DDL SQL statements:        sqldata_ddl.sql
+  Failed DDL SQL statements: sqldata_failed.sql
+
+Current timestamp: 2020-10-29 16:33:23.805

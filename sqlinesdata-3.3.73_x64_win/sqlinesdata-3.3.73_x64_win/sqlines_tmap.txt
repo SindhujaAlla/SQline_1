@@ -1,0 +1,9 @@
+-- SQLines Data and SQLines Converter table name mapping file
+
+-- Syntax (one mapping per line):
+-- schema.table, target_schema.target_table
+
+-- For Oracle, DB2 specify fully qualified name in uppercase: SCHEMA.TABLE
+
+-- Uncomment
+-- SALES.CONTACTS, CRM.SALES_CONTACTS

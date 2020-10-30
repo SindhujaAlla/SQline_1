@@ -1,0 +1,12 @@
+template_prototype.master_history
+sys.sys_config
+template_prototype.one_to_many_history
+template_prototype.one_to_one_history
+template_prototype.many_to_many_history
+template_prototype.master_mtm_xref_history
+acciones.asociado_reforma
+acciones.parametro
+acciones.tipo_venta
+acciones.acciones_reportar
+acciones.asociado
+acciones.elemento_tipo_cuenta

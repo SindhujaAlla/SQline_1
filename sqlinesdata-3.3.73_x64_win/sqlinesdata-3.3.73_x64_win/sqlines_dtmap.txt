@@ -1,0 +1,7 @@
+-- Global data type mapping file
+
+-- source_datatype(length, scale), target_datatype
+
+-- Examples (uncomment):
+-- NUMERIC(*, 0), INTEGER
+-- NUMBER(10,0), INT
